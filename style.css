@@ -34,7 +34,7 @@ body {
 .navigation .logo {
     color: var(--red);
     font-size: 1.7rem;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .logo span {
@@ -45,12 +45,13 @@ body {
     display: flex;
     align-items: center;
     gap: 5rem;
+    padding-right: 20vh;
 }
 
 .navigation ul li a {
     color: var(--dark);
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 700;
     transition: all 0.5s;
 }
 
@@ -84,7 +85,7 @@ body {
 }
 
 .home {
-    width: 90%;
+    width: 85%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -166,10 +167,11 @@ body {
 }
 
 
-@media screen and (max-width:785px) {
+@media screen and (max-width:800px) {
+
+
     .navigation {
         padding: 15px 15px;
-
     }
 
     .menu {
@@ -203,7 +205,7 @@ body {
     }
 
     .nav-menu.ativo {
-        right: 0;
+        right: -20vh;
     }
 
     .nav-item {
@@ -241,66 +243,8 @@ body {
 
     }
 
-}
-
-
-
-@media screen and (max-width:913.1368px) {
-    .navigation i {
-        padding-right: 10px;
+    .home-img img {
+        width: 80%;
     }
-
-    .navigation {
-        padding: 20px 20px;
-    }
-
-    .menu {
-        margin: 7px;
-    }
-
-    .menu.ativo .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .menu.ativo .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu.ativo .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-menu.ativo {
-        right: 0;
-    }
-
-    .nav-item {
-        margin: 13px 0;
-    }
-
-    .home {
-        padding: 95px 0%;
-        flex-direction: column;
-        text-align: center;
-        overflow: hidden;
-        gap: 5rem;
-        padding-left: 30px;
-    }
-
-    .home .text-h4 {
-        font-size: 25px;
-        padding-right: 20px;
-    }
-
-    .home .text-h1 {
-        font-size: 2.7rem;
-        line-height: 3rem;
-        padding-right: 20px;
-    }
-
-    .home p {
-        font-size: 20px;
-    }
-
 
 }
